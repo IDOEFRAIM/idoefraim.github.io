@@ -7,107 +7,140 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background-color: #0d1117;
-            color: #c9d1d9;
+            background-color: #0b0f19;
+            color: #94a3b8;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
         .sidebar {
-            background-color: #161b22;
-            border: 1px solid #30363d;
+            background-color: #111827;
+            border: 1px solid #1f2937;
         }
         .card-box {
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            transition: border-color 0.2s;
+            background-color: #111827;
+            border: 1px solid #1f2937;
+            transition: border-color 0.2s ease;
         }
         .card-box:hover {
-            border-color: #8b949e;
+            border-color: #3b82f6;
         }
         .accent-bar {
-            width: 40px;
+            width: 36px;
             height: 3px;
-            background-color: #f0b429;
+            background-color: #3b82f6; /* Bleu technique et souverain */
             margin-top: 6px;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
+        }
+        .timeline-dot {
+            width: 8px;
+            height: 8px;
+            background-color: #ef4444; /* Touche rouge d'impact et de précision */
+            border-radius: 50%;
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col lg:flex-row justify-center p-4 lg:p-12 gap-8">
 
-    <!-- SIDEBAR FIXE (Profil & Contacts) -->
-    <aside class="sidebar w-full lg:w-80 p-6 rounded-2xl flex flex-col items-center lg:items-start h-fit lg:sticky lg:top-12">
-        <!-- Avatar / Photo -->
-        <div class="w-32 h-32 rounded-2xl overflow-hidden mb-4 border-2 border-amber-400/30 bg-neutral-800 flex items-center justify-center text-xl font-bold text-amber-400">
+    <!-- SIDEBAR FIXE (Profil, Avatar & Contacts) -->
+    <aside class="sidebar w-full lg:w-80 p-6 rounded-2xl flex flex-col items-center lg:items-start h-fit lg:sticky lg:top-12 shadow-2xl">
+        <!-- Cadre Photo / Avatar -->
+        <div class="w-32 h-32 rounded-xl overflow-hidden mb-4 border-2 border-blue-500/30 bg-neutral-900 flex items-center justify-center font-bold text-blue-400 text-2xl shadow-inner">
             EF
         </div>
         
         <h1 class="text-xl font-bold text-white text-center lg:text-left">Efraim M. D. IDO</h1>
-        <p class="text-sm text-neutral-400 text-center lg:text-left mt-1 mb-6">Technical Co-Founder & AI Architect</p>
+        <p class="text-xs font-medium text-blue-400 text-center lg:text-left mt-1 mb-6 tracking-wide uppercase">AI Architect & Systems Engineer</p>
 
-        <!-- Liens de contact -->
+        <!-- Liens de contact épurés -->
         <div class="w-full space-y-3">
-            <a href="mailto:idoefraim06@gmail.com" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-amber-400/50 text-sm transition">
-                <span class="text-amber-400">✉</span>
+            <a href="mailto:idoefraim06@gmail.com" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-blue-500/50 text-xs text-neutral-300 transition">
+                <span class="text-blue-400 font-bold">@</span>
                 <span class="truncate">idoefraim06@gmail.com</span>
             </a>
-            <a href="https://www.linkedin.com/in/efraim-m-d-ido-a30021276" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-amber-400/50 text-sm transition">
-                <span class="text-amber-400">in</span>
+            <a href="https://www.linkedin.com/in/efraim-m-d-ido-a30021276" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-blue-500/50 text-xs text-neutral-300 transition">
+                <span class="text-blue-400 font-bold">in</span>
                 <span>LinkedIn</span>
             </a>
-            <a href="https://github.com/IDOEFRAIM" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900 border border-neutral-800 hover:border-amber-400/50 text-sm transition">
-                <span class="text-amber-400">gh</span>
+            <a href="https://github.com/IDOEFRAIM" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-blue-500/50 text-xs text-neutral-300 transition">
+                <span class="text-blue-400 font-bold">gh</span>
                 <span>GitHub</span>
             </a>
         </div>
     </aside>
 
-    <!-- CONTENU PRINCIPAL -->
+    <!-- CONTENU PRINCIPAL (Stratégie long terme & Preuves) -->
     <main class="flex-1 max-w-3xl space-y-8">
         
         <!-- SECTION BIO -->
-        <section class="card-box p-6 lg:p-8 rounded-2xl">
-            <h2 class="text-xl font-bold text-white">Bio</h2>
+        <section class="card-box p-6 lg:p-8 rounded-2xl shadow-xl">
+            <h2 class="text-lg font-bold text-white uppercase tracking-wider">Bio</h2>
             <div class="accent-bar"></div>
             <p class="text-sm lg:text-base leading-relaxed text-neutral-300">
-                Étudiant en cycle préparateur intégré à l'ENSA de Berrechid et architecte logiciel. Passionné par la conception de systèmes distribués robustes, l'ingénierie backend de pointe, et les systèmes d'intelligence artificielle agentique appliqués à des problématiques réelles, notamment dans le secteur de l'agriculture.
+                Architecte en systèmes d'intelligence artificielle et ingénieur logiciel. Guidé par une vision à long terme : concevoir des infrastructures technologiques souveraines, robustes et à fort impact réel, notamment au service des écosystèmes agricoles et des grands défis structurels à travers l'Afrique[cite: 1, 2].
             </p>
         </section>
 
-        <!-- SECTION PROJET PHARE -->
-        <section class="card-box p-6 lg:p-8 rounded-2xl">
-            <h2 class="text-xl font-bold text-white">Focus Projet</h2>
+        <!-- SECTION CE QUE JE FAIS (What I'm Doing) -->
+        <section class="card-box p-6 lg:p-8 rounded-2xl shadow-xl">
+            <h2 class="text-lg font-bold text-white uppercase tracking-wider">Focus & Vision</h2>
             <div class="accent-bar"></div>
-            <div class="space-y-4">
-                <div>
-                    <h3 class="text-lg font-semibold text-amber-400">Ladini</h3>
-                    <p class="text-xs text-neutral-400 mt-0.5">Co-fondateur technique & Architecte IA — Incubé par Tamwilcom</p>
-                    <p class="text-sm text-neutral-300 mt-2">
-                        Plateforme AgriTech propulsée par des agents autonomes et des pipelines RAG hybrides pour connecter les producteurs et acheteurs agricoles. Récompensée au Hackathon AgriTech d'Agadir.
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-4 rounded-xl bg-neutral-900/40 border border-neutral-800/80">
+                    <h3 class="text-sm font-semibold text-blue-400 uppercase tracking-wide">AgriTech & Systèmes</h3>
+                    <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
+                        Conception de solutions technologiques pour l'agriculture, avec <strong>Ladini</strong> (marketplace propulsée par des agents autonomes et pipelines RAG hybrides) comme preuve concrète d'exécution[cite: 2].
+                    </p>
+                </div>
+                <div class="p-4 rounded-xl bg-neutral-900/40 border border-neutral-800/80">
+                    <h3 class="text-sm font-semibold text-red-400 uppercase tracking-wide">Recherche & Fondations</h3>
+                    <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
+                        Approfondissement des architectures de l'apprentissage par renforcement (Reinforcement Learning) et des écosystèmes multi-agents autonomes.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION ACTIVITÉS / RECHERCHE -->
-        <section class="card-box p-6 lg:p-8 rounded-2xl">
-            <h2 class="text-xl font-bold text-white">Axes d'Exploration</h2>
-            <div class="accent-bar"></div>
-            <ul class="space-y-4 text-sm text-neutral-300">
-                <li class="flex items-start gap-3">
-                    <span class="text-amber-400 mt-1">•</span>
+        <!-- SECTION CHRONOLOGIE / PARCOURS -->
+        <section class="card-box p-6 lg:p-8 rounded-2xl shadow-xl">
+            <h2 class="text-lg font-bold text-white uppercase tracking-wider">Trajectoire & Impact</h2>
+            <div class="accent-bar" style="background-color: #ef4444;"></div>
+            
+            <div class="space-y-6">
+                <!-- Élément 1 -->
+                <div class="flex items-start gap-4">
+                    <div class="timeline-dot mt-1.5 shrink-0"></div>
                     <div>
-                        <strong class="text-white block">Reinforcement Learning & Multi-Agent Systems</strong>
-                        Approfondissement des architectures d'apprentissage par renforcement et orchestration d'agents autonomes.
+                        <h3 class="text-sm font-semibold text-white">Ladini — Co-fondateur technique & Architecte IA</h3>
+                        <p class="text-xs text-blue-400 mt-0.5">Incubé par Tamwilcom / Innov Invest • 3e place au Hackathon AgriTech d'Agadir[cite: 2]</p>
+                        <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
+                            Architecture de bout en bout d'une plateforme d'agents autonomes, orchestrations LangGraph et indexation vectorielle avancée pour connecter les producteurs[cite: 2].
+                        </p>
                     </div>
-                </li>
-                <li class="flex items-start gap-3">
-                    <span class="text-amber-400 mt-1">•</span>
+                </div>
+
+                <!-- Élément 2 -->
+                <div class="flex items-start gap-4">
+                    <div class="timeline-dot mt-1.5 shrink-0"></div>
                     <div>
-                        <strong class="text-white block">Infrastructure & Cloud Scalable</strong>
-                        Développement de services backend haute performance (Java Spring Boot, Python FastAPI) et déploiements conteneurisés sur AWS.
+                        <h3 class="text-sm font-semibold text-white">Ingénierie Back-End d'Entreprise</h3>
+                        <p class="text-xs text-blue-400 mt-0.5">Data24 • Services robustes & API Spring Boot[cite: 1, 2]</p>
+                        <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
+                            Développement de services d'entreprise sécurisés et intégration de modules cognitifs dans des environnements exigeants.
+                        </p>
                     </div>
-                </li>
-            </ul>
+                </div>
+
+                <!-- Élément 3 -->
+                <div class="flex items-start gap-4">
+                    <div class="timeline-dot mt-1.5 shrink-0"></div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-white">Fondations Académiques & Rigueur</h3>
+                        <p class="text-xs text-blue-400 mt-0.5">ENSA Berrechid • Cycle Préparateur Intégré</p>
+                        <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
+                            Boursier d'excellence, axé sur la précision algorithmique et la conception de systèmes logiciels pérennes.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </main>
