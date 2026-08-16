@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,136 +7,136 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background-color: #0b0f19;
-            color: #94a3b8;
+            background-color: #0d1117;
+            color: #c9d1d9;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
         .sidebar {
-            background-color: #111827;
-            border: 1px solid #1f2937;
+            background-color: #161b22;
+            border: 1px solid #30363d;
         }
         .card-box {
-            background-color: #111827;
-            border: 1px solid #1f2937;
+            background-color: #161b22;
+            border: 1px solid #30363d;
             transition: border-color 0.2s ease;
         }
         .card-box:hover {
-            border-color: #3b82f6;
+            border-color: #f0b429;
         }
         .accent-bar {
             width: 36px;
             height: 3px;
-            background-color: #3b82f6; /* Bleu technique et souverain */
+            background-color: #f0b429;
             margin-top: 6px;
             margin-bottom: 18px;
         }
         .timeline-dot {
             width: 8px;
             height: 8px;
-            background-color: #ef4444; /* Touche rouge d'impact et de précision */
+            background-color: #f0b429;
             border-radius: 50%;
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col lg:flex-row justify-center p-4 lg:p-12 gap-8">
 
-    <!-- SIDEBAR FIXE (Profil, Avatar & Contacts) -->
+    <!-- FIXED SIDEBAR -->
     <aside class="sidebar w-full lg:w-80 p-6 rounded-2xl flex flex-col items-center lg:items-start h-fit lg:sticky lg:top-12 shadow-2xl">
-        <!-- Cadre Photo / Avatar -->
-        <div class="w-32 h-32 rounded-xl overflow-hidden mb-4 border-2 border-blue-500/30 bg-neutral-900 flex items-center justify-center font-bold text-blue-400 text-2xl shadow-inner">
+        
+        <div class="w-32 h-32 rounded-xl overflow-hidden mb-4 border-2 border-amber-400/30 bg-neutral-900 flex items-center justify-center font-bold text-amber-400 text-2xl shadow-inner">
             EF
         </div>
         
         <h1 class="text-xl font-bold text-white text-center lg:text-left">Efraim M. D. IDO</h1>
-        <p class="text-xs font-medium text-blue-400 text-center lg:text-left mt-1 mb-6 tracking-wide uppercase">AI Architect & Systems Engineer</p>
+        <p class="text-xs font-medium text-amber-400 text-center lg:text-left mt-1 mb-6 tracking-wide uppercase">Student & AI Systems Builder</p>
 
-        <!-- Liens de contact épurés -->
+        <!-- Links -->
         <div class="w-full space-y-3">
-            <a href="mailto:idoefraim06@gmail.com" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-blue-500/50 text-xs text-neutral-300 transition">
-                <span class="text-blue-400 font-bold">@</span>
+            <a href="mailto:idoefraim06@gmail.com" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-400/50 text-xs text-neutral-300 transition">
+                <span class="text-amber-400 font-bold">@</span>
                 <span class="truncate">idoefraim06@gmail.com</span>
             </a>
-            <a href="https://www.linkedin.com/in/efraim-m-d-ido-a30021276" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-blue-500/50 text-xs text-neutral-300 transition">
-                <span class="text-blue-400 font-bold">in</span>
+            <a href="https://www.linkedin.com/in/efraim-m-d-ido-a30021276" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-400/50 text-xs text-neutral-300 transition">
+                <span class="text-amber-400 font-bold">in</span>
                 <span>LinkedIn</span>
             </a>
-            <a href="https://github.com/IDOEFRAIM" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-blue-500/50 text-xs text-neutral-300 transition">
-                <span class="text-blue-400 font-bold">gh</span>
+            <a href="https://github.com/IDOEFRAIM" target="_blank" class="flex items-center gap-3 p-3 rounded-xl bg-neutral-900/60 border border-neutral-800 hover:border-amber-400/50 text-xs text-neutral-300 transition">
+                <span class="text-amber-400 font-bold">gh</span>
                 <span>GitHub</span>
             </a>
         </div>
     </aside>
 
-    <!-- CONTENU PRINCIPAL (Stratégie long terme & Preuves) -->
+    <!-- MAIN CONTENT -->
     <main class="flex-1 max-w-3xl space-y-8">
         
-        <!-- SECTION BIO -->
+        <!-- BIO -->
         <section class="card-box p-6 lg:p-8 rounded-2xl shadow-xl">
             <h2 class="text-lg font-bold text-white uppercase tracking-wider">Bio</h2>
             <div class="accent-bar"></div>
             <p class="text-sm lg:text-base leading-relaxed text-neutral-300">
-                Architecte en systèmes d'intelligence artificielle et ingénieur logiciel. Guidé par une vision à long terme : concevoir des infrastructures technologiques souveraines, robustes et à fort impact réel, notamment au service des écosystèmes agricoles et des grands défis structurels à travers l'Afrique[cite: 1, 2].
+                Engineering student at ENSA Berrechid and software builder. I focus on designing robust backend systems and autonomous AI agents to solve real-world problems, with a current emphasis on agricultural ecosystems in Africa.
             </p>
         </section>
 
-        <!-- SECTION CE QUE JE FAIS (What I'm Doing) -->
+        <!-- WHAT I DO -->
         <section class="card-box p-6 lg:p-8 rounded-2xl shadow-xl">
-            <h2 class="text-lg font-bold text-white uppercase tracking-wider">Focus & Vision</h2>
+            <h2 class="text-lg font-bold text-white uppercase tracking-wider">Current Focus</h2>
             <div class="accent-bar"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div class="p-4 rounded-xl bg-neutral-900/40 border border-neutral-800/80">
-                    <h3 class="text-sm font-semibold text-blue-400 uppercase tracking-wide">AgriTech & Systèmes</h3>
+                    <h3 class="text-sm font-semibold text-amber-400 uppercase tracking-wide">AgriTech & Systems</h3>
                     <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
-                        Conception de solutions technologiques pour l'agriculture, avec <strong>Ladini</strong> (marketplace propulsée par des agents autonomes et pipelines RAG hybrides) comme preuve concrète d'exécution[cite: 2].
+                        Building applied technology for agriculture. Currently developing <strong>Ladini</strong>, a marketplace connecting farmers and buyers using autonomous agents and hybrid RAG pipelines.
                     </p>
                 </div>
                 <div class="p-4 rounded-xl bg-neutral-900/40 border border-neutral-800/80">
-                    <h3 class="text-sm font-semibold text-red-400 uppercase tracking-wide">Recherche & Fondations</h3>
+                    <h3 class="text-sm font-semibold text-amber-400 uppercase tracking-wide">Core AI & Infrastructure</h3>
                     <p class="text-xs text-neutral-400 mt-2 leading-relaxed">
-                        Approfondissement des architectures de l'apprentissage par renforcement (Reinforcement Learning) et des écosystèmes multi-agents autonomes.
+                        Deepening my knowledge in Reinforcement Learning architectures, multi-agent orchestration, and scalable backend infrastructure.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- SECTION CHRONOLOGIE / PARCOURS -->
+        <!-- TRACK RECORD -->
         <section class="card-box p-6 lg:p-8 rounded-2xl shadow-xl">
-            <h2 class="text-lg font-bold text-white uppercase tracking-wider">Trajectoire & Impact</h2>
-            <div class="accent-bar" style="background-color: #ef4444;"></div>
+            <h2 class="text-lg font-bold text-white uppercase tracking-wider">Track Record</h2>
+            <div class="accent-bar"></div>
             
             <div class="space-y-6">
-                <!-- Élément 1 -->
+                <!-- Item 1 -->
                 <div class="flex items-start gap-4">
                     <div class="timeline-dot mt-1.5 shrink-0"></div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Ladini — Co-fondateur technique & Architecte IA</h3>
-                        <p class="text-xs text-blue-400 mt-0.5">Incubé par Tamwilcom / Innov Invest • 3e place au Hackathon AgriTech d'Agadir[cite: 2]</p>
+                        <h3 class="text-sm font-semibold text-white">Ladini — Technical Co-founder & AI Architect</h3>
+                        <p class="text-xs text-amber-400/80 mt-0.5">3rd Place Winner — Agadir AgriTech Hackathon</p>
                         <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
-                            Architecture de bout en bout d'une plateforme d'agents autonomes, orchestrations LangGraph et indexation vectorielle avancée pour connecter les producteurs[cite: 2].
+                            Architecting an autonomous agent platform from the ground up, utilizing LangGraph and advanced vector indexing to streamline agricultural trade.
                         </p>
                     </div>
                 </div>
 
-                <!-- Élément 2 -->
+                <!-- Item 2 -->
                 <div class="flex items-start gap-4">
                     <div class="timeline-dot mt-1.5 shrink-0"></div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Ingénierie Back-End d'Entreprise</h3>
-                        <p class="text-xs text-blue-400 mt-0.5">Data24 • Services robustes & API Spring Boot[cite: 1, 2]</p>
+                        <h3 class="text-sm font-semibold text-white">Backend Engineering</h3>
+                        <p class="text-xs text-amber-400/80 mt-0.5">API Development & Systems Integration at DATA24</p>
                         <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
-                            Développement de services d'entreprise sécurisés et intégration de modules cognitifs dans des environnements exigeants.
+                            Developing robust enterprise services (Java Spring Boot) and safely integrating cognitive AI modules into standard software architectures.
                         </p>
                     </div>
                 </div>
 
-                <!-- Élément 3 -->
+                <!-- Item 3 -->
                 <div class="flex items-start gap-4">
                     <div class="timeline-dot mt-1.5 shrink-0"></div>
                     <div>
-                        <h3 class="text-sm font-semibold text-white">Fondations Académiques & Rigueur</h3>
-                        <p class="text-xs text-blue-400 mt-0.5">ENSA Berrechid • Cycle Préparateur Intégré</p>
+                        <h3 class="text-sm font-semibold text-white">Academic Foundations</h3>
+                        <p class="text-xs text-amber-400/80 mt-0.5">ENSA Berrechid • Integrated Preparatory Cycle</p>
                         <p class="text-xs text-neutral-400 mt-1 leading-relaxed">
-                            Boursier d'excellence, axé sur la précision algorithmique et la conception de systèmes logiciels pérennes.
+                            Building strong, rigorous foundations in applied mathematics, algorithms, and core computer science.
                         </p>
                     </div>
                 </div>
